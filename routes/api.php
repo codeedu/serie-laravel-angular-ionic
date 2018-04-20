@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('albums', 'AlbumController');
+Route::resource('albums.photos', 'PhotoController');

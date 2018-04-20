@@ -15,3 +15,5 @@ Route::get('/', function () {
     #return view('welcome');
     return view('spa');
 });
+
+Route::name('photo.url')->get('/albums/photos/{photoName}','PhotoController@photoUrl');

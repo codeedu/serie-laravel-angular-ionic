@@ -8,7 +8,9 @@
   <br><br>
   <div class="card col-md-3" *ngFor="let album of albums">
     <div class="card-body">
-      <h3>{{ album.name }}</h3>
+      <h3>
+        <a [routerLink]="[album.id,'photos','create']">{{ album.name }}</a>
+      </h3>
     </div>
   </div>
 </div>

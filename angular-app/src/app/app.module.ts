@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 const routes: Routes = [
     {path: 'albums', component: AlbumListComponent},
     {path: 'albums/create', component: AlbumCreateComponent},
+    {path: 'albums/:album/photos/create', component: PhotoCreateComponent},
 ]
 
 
